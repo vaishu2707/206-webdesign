@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>mouse events</title>
+<script>
+function clickme(){
+var heading =document.getElementById('head');
+if(heading.style.color=="black")
+  {
+  heading.style.color="red";
+  }
+  else
+  {
+  heading.style.color="black";
+  }
+}
+
+function clickme1()
+{
+var heading =document.getElementById('head1');
+if(heading1.style.color=="black")
+  {
+  heading1.style.color="red";
+  }
+  else
+  {
+  heading1.style.color="black";
+  }
+}
+
+function clickme2()
+{
+var heading2 =document.getElementById('head2');
+if(heading2.style.color=="black")
+  {
+  heading2.style.color="red";
+  }
+  else
+  {
+  heading2.style.color="black";
+  }
+}
+
+</script>
+</head>
+<body>
+<h1>click event</h1>
+<h2 id="head">mouse event in javascript</h2>
+<button onclick="clickme()" id="btn">clickme</button>
+
+<h1>click event</h1>
+<h2 id="head1">mouse event in javascript</h2>
+<button onmouseout="clickme1()" id="btn1">clickme</button>
+
+<h1>click event</h1>
+<h2 id="head2">mouse event in javascript</h2>
+<button onblur="clickme2()" id="btn2">clickme</button>
+
+</body>
+
+</html>

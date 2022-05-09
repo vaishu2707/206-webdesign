@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+
+  <title>Document</title>
+ </head>
+ <body>
+ <h3>Enter Number You Want Table</h3>
+  <input id="userinput"  placeholder="Enter Number">
+  <button onclick="table();">Procced</button>
+ </body>
+ <script type="text/javascript">
+function table() {
+
+ var num=document.getElementById("userinput").value;
+ document.write("You Enterd = "+num + "</br>");
+var i;
+for(i=1;i<=10;i++)
+ {
+var temp=num;
+ temp=i*temp;
+ 
+document.write(temp + "</br>");
+}
+
+ }
+ </script>
+</html>

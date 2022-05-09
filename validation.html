@@ -1,0 +1,30 @@
+JavaScript Code to validate email address.
+
+<html>
+<head>
+<script type="text/javascript">
+function check_email()
+{
+var email_add=document.getElementById("email").value
+if ((email_add.indexOf("@") <= 1) &&( email_add.lastIndexOf(".") <= 2))
+{
+alert("Not Valid Email, please try again.");
+
+return true;
+    
+}
+else
+{
+    alert("Your Email Is Valid");
+
+    return false;
+}
+}
+
+</script>
+</head>
+<body>
+Enter Email<input type="text" id="email">
+<input type="button" Value="Check Email" onclick="return check_email()">
+</body>
+</html>

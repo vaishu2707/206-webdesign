@@ -1,0 +1,128 @@
+
+<html>
+<head>
+	<style>
+		table{
+			display: flex;
+			justify-content: center;
+			justify-items: center;
+		}
+
+		th{
+			background-color: lightgreen;
+		}
+	</style>
+</head>
+
+<body bgcolor="aqua">
+	
+
+	<table>
+		<form>
+<h1 align="center">string function</h1>
+<tr>
+<th>functions</th><th>use</th>
+</tr>
+	<th><input type="button" value="charAt" onclick="charAt()"></th>
+	<th>It provide the char value present at the specified index.</th><tr></tr>
+	
+	<th><input type="button" value="concat" onclick="concat()"></th>
+	<th>It provide concat two or more string.</th><tr></tr>
+
+	<th><input type="button" value="indexof" onclick="indexof()"></th>
+	<th>It display index of given number.</th><tr></tr>
+
+	<th><input type="button" value="lastindexof" onclick="lastindexof()"></th>
+    <th>It display index of given charcat from last position.</th><tr></tr>
+
+	<th><input type="button" value="search" onclick="search()"></th>
+    <th>It search a specified regulat expression in a given string.</th><tr></tr>
+
+	<th><input type="button" value="replace" onclick="replace()"></th>
+    <th>It replace a given string with the specified replacment.</th><tr></tr>
+
+	
+
+	<th><input type="button" value="slice" onclick="slice()"></th>
+   <th>It is same as subset().it allows us to assign positive as well as negative index</th><tr></tr>
+	 
+	 <th><input type="button" value="tolowercase" onclick="tolowercase()"></th>
+    <th>It convert the given string into lowercase letter.</th><tr></tr>
+	
+	<th><input type="button" value="touppercase" onclick="touppercase()"></th>
+	<th>It convert the given string into uppercase letter.</th><tr></tr>
+	
+	<th><input type="button" value="trim" onclick="trim()"></th>
+	<th>it trims the whitw space from the left and right side of the string .</th><tr></tr>
+</body>
+<script type="text/javascript">
+
+	function charAt()
+	{
+	str="Hello"
+	alert("the charat()returns the character of given index"+"\n"+" character at index 3 in Hello is "+str.charAt(3));
+	}
+
+	function concat()
+	{
+	str="Hello"
+	str2="imrd"
+	alert("it combine two string"+"\n"+"first string: Hello"+"\n"+" string: imrd"+"\n="+str.concat(str2));
+	}
+	
+	
+	function indexof()
+	{
+	str="Hello"
+	alert("The indexof() return index\n index of H in Hello is="+str.indexOf("H"));
+	}
+
+	function lastindexof()
+	{
+	str="Hello"
+	alert("The lastIndexOf() return the index from right side\nindex of l in Hello is="+str.lastIndexOf("l"));
+	}
+
+	function search()
+	{
+	str="Hello imrd"
+	alert("It search charcter in given string and return index\nstring is Hello imrd\nif we enter i, it returns="+str.search("i"));
+	}
+
+	function replace()
+	{
+	str="Hello"
+	alert("string is Hello\nHel replace with Hi="+str.replace("Hel","Hi"));
+	}
+
+	function substr()
+	{
+	str="Hello"
+	alert("string is Hello\nIf we enter (0,3) it returns="+str.substr(0,3));
+	}
+
+	function slice()
+	{
+	str="Hello"
+	alert("string is Hello\nIf we enter (0,4), it returns="+str.slice(0,4));
+	}
+
+	function tolowercase()
+	{
+	str="Hello"
+	alert("string is Hello\nIn lower case="+str.toLowerCase());
+	}
+
+	function touppercase()
+	{
+	str="Hello"
+	alert("string is Hello\n In upper case="+str.toUpperCase());
+	}
+
+	function trim()
+	{
+	str="Hello"
+	alert("string is Hello \nstring after trim="+str.trim());
+	}
+</script>
+</html>
